@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: observability-operator
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads-stage/mleonova-tenant/observability-operator/observability-operator@sha256:af4e62a29f79d8968ee78b9796944ee9b0d91f1495c6be016c676189adf1eba7
         imagePullPolicy: Always
         name: container-image
         ports:
