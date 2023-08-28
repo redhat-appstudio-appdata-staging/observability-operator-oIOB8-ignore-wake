@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: observability-operator
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/mleonova-tenant/observability-operator/observability-operator@sha256:af4e62a29f79d8968ee78b9796944ee9b0d91f1495c6be016c676189adf1eba7
+        name: container-image
+        resources: {}
+status: {}
